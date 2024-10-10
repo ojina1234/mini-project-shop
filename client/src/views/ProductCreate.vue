@@ -114,12 +114,12 @@ export default {
   created() {
     this.getCategoryList();
   },
-  mounted() {
-    if(this.user.email == undefined) {
-      alert("로그인을 해야 이용할 수 있습니다.");
-      this.$router.push({path:'/'}); 
-    }
-  },
+  // mounted() {
+  //   if(this.user.email == undefined) {
+  //     alert("로그인을 해야 이용할 수 있습니다.");
+  //     this.$router.push({path:'/'}); 
+  //   }
+  // },
   methods: {
     goToList(){
       this.$router.push({path:'/sales'}); 

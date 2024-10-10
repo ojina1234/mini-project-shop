@@ -8,6 +8,9 @@ import ProductCreate from '../views/ProductCreate.vue'
 import ProductUpdate from '../views/ProductUpdate.vue'
 import SalesList from '../views/SalesList.vue'
 import ImageInsert from '../views/ImageInsert.vue'
+import Hello from '../views/HelloWorld.vue'
+import Study from '../views/CompanyStudy.vue'
+import AddData from '../views/AddData.vue'
 
 const routes = [{
     path: '/',
@@ -38,6 +41,21 @@ const routes = [{
     path: '/image_insert',
     name: 'ImageInsert',
     component: ImageInsert
+  },
+  {
+    path: '/hello',
+    name: 'Hello',
+    component: Hello
+  },
+  {
+    path: '/study',
+    name: 'Study',
+    component: Study
+  },
+  {
+    path: '/addData',
+    name: 'AddData',
+    component: AddData
   }
 ]
 
@@ -46,4 +64,4 @@ const router = createRouter({
   routes
 })
 
-export default router
+export default router //export default로 router를 내보냄 -> 내보내는 거는 main.js에서 하고 있음

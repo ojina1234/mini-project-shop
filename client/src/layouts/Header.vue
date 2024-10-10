@@ -19,6 +19,9 @@
           <li v-if="user.email!=undefined" class="nav-item">
             <router-link class="nav-link" to="/sales">제품등록페이지</router-link>
           </li>
+          <li class="nav-item">
+            <router-link class="nav-link" to="/study">CRUD STUDY</router-link>
+          </li>
           <li v-if="user.email==undefined"><button class="btn btn-danger" type="button" @click="kakaoLoin">로그인</button></li>
           <li v-else><button class="btn btn-danger" type="button" @click="kakaoLogout">로그아웃</button></li>
         </ul>
